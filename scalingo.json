@@ -17,16 +17,16 @@
             "required": true,
             "value":""
         },
+          "ALIVE_NAME": {
+            "description": "اسمك",
+            "required": true,
+            "value": "ANYTHING"
+        },
         "APP_ID": {
             "description": "كـود ايبي ايـدي〔 App id 〕اتركـه كمـا هــو",
             "required": true,
             "value":"24507119"
         },
-        "ALIVE_NAME": {
-            "description": "اسمك",
-            "required": true,
-            "value": "ANYTHING"
-        }
         "API_HASH": {
             "description": "كـود ايبي هـاش〔 Api Hash 〕اتركـه كمـا هــو",
             "required": true,
