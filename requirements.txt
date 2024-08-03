@@ -2,3 +2,5 @@ gunicorn
 flask
 flask_restful
 requests
+cryptography
+base64
