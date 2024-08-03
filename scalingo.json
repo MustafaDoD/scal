@@ -1,7 +1,7 @@
 {
     "name": "Mustafa",
     "description": "الافضل :)",
-    "logo": "https://graph.org/file/357f884d870459718a779.jpg",
+    "logo": "https://i.imgflip.com/2/1biqro.jpg",
     "addons": ["scalingo-postgresql"],
     "keywords": ["python","ai","application","web","gunicorn","flask","scalingo","port:8080","flask-app","app","webapp"],
     "repository": "https://github.com/MustafaDoD/scal",
