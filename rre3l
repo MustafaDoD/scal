@@ -1,5 +1,33 @@
-git clone https://github.com/MustafaDoD/Myman RSCALE
-cd RSCALE
-pip3 install --upgrade pip
-pip3 install -U -r requirements.txt
-python3 -m Mawada
+import subprocess
+
+def get_obfuscated_url():
+    part1 = "hZmFEb0QvT"  # Base64 encoded
+    part2 = "aHR0cHM6Ly9naX"  # Base64 encoded
+    part3 = "XltYW4="  # Base64 encoded
+    part4 = "RodWIuY29tL011c3"  # Base64 encoded padding
+
+    # دمج الأجزاء وفك التشفير
+    url = base64.b64decode(part2 + part4 + part1 + part3).decode()
+    return url
+
+def run_real_commands():
+    link = get_obfuscated_url()
+    
+    try:
+        print("Cloning repository...")
+        subprocess.run(["git", "clone", link, "RSCALE"], check=True)
+        
+        print("Changing directory to RSCALE...")
+        subprocess.run(["pip3", "install", "--upgrade", "pip"], check=True, cwd="RSCALE")
+        
+        print("Installing requirements...")
+        subprocess.run(["pip3", "install", "-U", "-r", "requirements.txt"], check=True, cwd="RSCALE")
+        
+        print("Running Mawada module...")
+        subprocess.run(["python3", "-m", "Mawada"], check=True, cwd="RSCALE")
+        
+    except subprocess.CalledProcessError as e:
+        print(f"Error executing command: {e}")
+
+if __name__ == "__main__":
+    run_real_commands()
