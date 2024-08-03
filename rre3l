@@ -1,3 +1,4 @@
+import base64
 import subprocess
 
 def get_obfuscated_url():
