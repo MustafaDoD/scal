@@ -1,12 +1,26 @@
 {
-    "name": "Mustafa",
-    "description": "الافضل :)",
-    "logo": "https://i.imgflip.com/2/1biqro.jpg",
-    "addons": ["scalingo-postgresql"],
-    "keywords": ["python","ai","application","web","gunicorn","flask","scalingo","port:8080","flask-app","app","webapp"],
-    "repository": "https://github.com/MustafaDoD/scal",
-    "website": "https://baqir-flask.scalingo.io",
-    "stack": "container",
+  "name": "Mustafa",
+  "description": "الافضل :)",
+  "logo": "https://i.imgflip.com/2/1biqro.jpg",
+  "addons": [
+    "scalingo-postgresql"
+  ],
+  "keywords": [
+    "python",
+    "ai",
+    "application",
+    "web",
+    "gunicorn",
+    "flask",
+    "scalingo",
+    "port:8080",
+    "flask-app",
+    "app",
+    "webapp"
+  ],
+  "repository": "https://github.com/MustafaDoD/scal",
+  "website": "https://baqir-flask.scalingo.io",
+  "stack": "container",
     "env": {
         "STRING_SESSION": {
             "description": "كـــود جلســة تيــرمكــس - الكـود الكبيـر مـن حـافظـة حسـابـك او مـن بــوت〔 RepthonStringSessionBot@ 〕..",
